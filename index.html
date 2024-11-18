@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>个人主页</title>
+  </head>
+  <style>
+    div.search-box {
+      padding: 200px 0;
+    }
+    form {
+      position: relative;
+      width: 500px;
+      margin: 0 auto;
+    }
+    input,
+    button {
+      border: 0;
+      outline: 0;
+    }
+    .search-box input {
+      width: 90%;
+      height: 32px;
+      padding-left: 12px;
+      font-size: 14px;
+      border: 2px solid rgb(113, 220, 253);
+      border-radius: 12px 0 0 12px;
+    }
+    .search-box button{
+      width: 82px;
+      height: 38px;
+      cursor: pointer;
+      position: absolute;
+      background:rgb(113, 220, 253);
+      border-radius: 0 12px 12px 0;
+    }
+    .search-box button:hover{
+      background-color: rgb(89, 253, 253);
+    }
+    .search-box button:before{
+      content: "搜索";
+      font-size: 16px;
+      vertical-align: middle;
+      text-align: center;
+      line-height:1;
+    }
+  </style>
+  <body
+    background="piggy.jpg"
+    style="background-size:100% 100%; background-attachment: fixed;"
+  >
+      <div class="search-box">
+        <form action="https://cn.bing.com/search" method="get" target="_blank">
+          <input placeholder="胡哼哼是猪噢！" name="q" type="text">
+      <button type="submit">
+      </button>
+    </form>
+    </div>
+    </form>
+  </body>
+</html>
